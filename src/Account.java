@@ -5,6 +5,7 @@ public class Account {
     private String name;
     private String accNum;
     private int balance;
+    Scanner scanner;
 
     public Account (String name, String accNum){
         balance = 0;
@@ -15,7 +16,7 @@ public class Account {
     private void menu(){
         char choice = '\0';
         boolean flag = true;
-        Scanner scanner = new Scanner(System.in);
+        //scanner = new Scanner(System.in);
         System.out.println("Welcome " + name);
         System.out.println("Your account number is: " + accNum + "\n");
         System.out.println("What would you like to do?" + "\n");
@@ -48,5 +49,19 @@ public class Account {
         System.out.println("**********************************************");
         System.out.println("Account balance = $" + balance);
         System.out.println("**********************************************");
+    }
+
+    private void deposit(){
+        System.out.println("Enter the amount you wish to deposit:");
+        boolean flag = true;
+        int value;
+        value = Integer.parseInt(scanner.nextLine());
+
+        while (flag){
+            if (value )
+        }
+
+        balance = balance + value;
+
     }
 }
